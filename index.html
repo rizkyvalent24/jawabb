@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Form Validasi dengan Javascript</title>
+    <link rel="stylesheet" type="text/css" href="css/style504.css">
+</head>
+<body>
+    <center><h2>FORM PENDAFTARAN</h2></center>
+    <hr>
+    <div class="login">
+        <center><form action="#" method="POST" onSubmit="validasi()">
+            <div>
+                <label>Username :</label>
+                <input type="text" name="username" id="username" placeholder="username" />
+            </div>
+            <div>
+                <label>Nama Lengkap :</label>
+                <input type="text" name="nama" id="nama" placeholder="Nama Lengkap Lu Anjing">
+            </div>
+            <div>
+                <label>Email :</label>
+                <input type="text" name="email" id="email" placeholder="Valent_Ganteng@gmail.com" />
+            </div>
+            <div>
+                <input type="submit" value="Daftar" class="tombol">
+            </div>
+        </center>
+        </form>
+    </div>
+</body>
+<script type="text/javascript">
+    function validasi() {
+        var username = document.getElementById("username").value;
+        var nama = document.getElementById("nama").value;
+        var email = document.getElementById("email").value;
+        if (username != "" && nama != "" && email != "") {
+            alert("Anjai Berhasil! Anjingg!S");
+        } else {
+            alert("Yang Lengkap Broo!!!");
+        }
+    }
+</script>
+</html>
